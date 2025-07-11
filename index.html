@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InvestSecure - Plateforme de Rendement Fiable</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2490/2490401.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(180deg, #0b1f3a 0%, #003366 100%);
+      color: white;
+    }
+
+    header {
+      background-color: transparent;
+      padding: 1.5rem;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #00d2ff;
+    }
+
+    .nav-link {
+      color: #ffffff !important;
+      margin-left: 1rem;
+    }
+
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: linear-gradient(145deg, #003366, #004080);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .cta-btn {
+      margin-top: 1.5rem;
+      background-color: #ffd700;
+      border: none;
+      padding: 0.75rem 2rem;
+      font-weight: bold;
+      color: #003366;
+      border-radius: 30px;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+    }
+
+    .plan-card {
+      background: #ffffff10;
+      border: 1px solid #00d2ff30;
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .plan-card:hover {
+      box-shadow: 0 0 20px #00d2ff60;
+    }
+
+    .plan-card h4 {
+      color: #00d2ff;
+    }
+
+    .testimonial {
+      background-color: #ffffff10;
+      border-left: 5px solid #00d2ff;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .testimonial img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 0.8rem;
+    }
+
+    footer {
+      background-color: #001d3d;
+      color: #ccc;
+      padding: 2rem;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    .btn-outline-light:hover {
+      background-color: #00d2ff;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="container d-flex justify-content-between align-items-center">
+  <div class="logo">InvestSecure</div>
+  <nav>
+    <a href="#plans" class="nav-link">Plans</a>
+    <a href="#avis" class="nav-link">Avis</a>
+    <a href="#mentions" class="nav-link">Mentions</a>
+    <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal">Connexion</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <h1>Investissez avec Confiance</h1>
+  <p class="lead">Plateforme 100% sécurisée. Rendements jusqu’à 12%/mois.</p>
+  <button class="cta-btn">Commencer maintenant</button>
+</section>
+
+<!-- Plans -->
+<section class="section container text-center" id="plans">
+  <h2 class="mb-4">Nos Plans</h2>
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <div class="plan-card">
+        <h4>Essentiel</h4>
+        <p>1000€</p>
+        <p>8% / mois</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="plan-card">
+        <h4>Croissance</h4>
+        <p>3000€</p>
+        <p>10% / mois</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="plan-card">
+        <h4>Premium</h4>
+        <p>5000€</p>
+        <p>12% / mois</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Avis -->
+<section class="section container" id="avis">
+  <h2 class="mb-4 text-center">Témoignages</h2>
+  <div class="testimonial d-flex align-items-center">
+    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Jean">
+    <div><strong>Jean M. – Paris</strong><br>“J’ai doublé mon capital en 6 mois. Site fiable.”</div>
+  </div>
+  <div class="testimonial d-flex align-items-center">
+    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sophie">
+    <div><strong>Sophie L. – Lyon</strong><br>“Paiement rapide, service client au top.”</div>
+  </div>
+</section>
+
+<!-- Mentions légales -->
+<section class="section container" id="mentions">
+  <h2 class="mb-3">Mentions légales</h2>
+  <p><strong>Société :</strong> InvestSecure Partners Ltd</p>
+  <p><strong>Adresse :</strong> 45 Queen's Gate, Londres SW7, Royaume-Uni</p>
+  <p><strong>Email :</strong> contact@investsecure-partners.com</p>
+  <p><strong>Téléphone :</strong> +44 20 7946 0933</p>
+  <p><strong>Avertissement :</strong> L’investissement comporte des risques. Ce site est une simulation fictive.</p>
+</section>
+
+<!-- Footer -->
+<footer>
+  © 2025 InvestSecure – Tous droits réservés • Site fictif à usage éducatif
+</footer>
+
+<!-- Connexion Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-dark">
+      <div class="modal-header">
+        <h5 class="modal-title">Connexion sécurisée</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <form onsubmit="event.preventDefault(); alert('⚠️ Compte temporairement bloqué. Contactez le support.');">
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label">Adresse e-mail</label>
+            <input type="email" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Mot de passe</label>
+            <input type="password" class="form-control" required />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary w-100">Se connecter</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
